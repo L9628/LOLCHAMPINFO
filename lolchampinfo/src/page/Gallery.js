@@ -17,31 +17,31 @@ function Gallery() {
 
   return (
     <div>
-      <h2>탑</h2>
+      <h2>망나니</h2>
       <div id='list' className='flex'>
         {탑.map(el => {
           return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
         })}
       </div>
-      <h2>정글</h2>
+      <h2>백정</h2>
       <div id='list' className='flex'>
         {정글.map(el => {
           return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
         })}
       </div>
-      <h2>미드</h2>
+      <h2>황족</h2>
       <div id='list' className='flex'>
         {미드.map(el => {
           return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
         })}
       </div>
-      <h2>원딜</h2>
+      <h2>숟가락</h2>
       <div id='list' className='flex'>
         {원딜.map(el => {
           return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
         })}
       </div>
-      <h2>서폿</h2>
+      <h2>도구</h2>
       <div id='list' className='flex'>
         {서폿.map(el => {
           return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
