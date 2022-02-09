@@ -16,44 +16,83 @@ function Gallery() {
   };
 
   return (
+  <div id='container'>
+    
     <div>
-      <h2>망나니</h2>
-      <div id='list' className='flex'>
+      <button className='전체버튼'>전체</button>
+      <button className='탑버튼'>탑</button>
+      <button className='정글버튼'>정글</button>
+      <button className='미드버튼'>미드</button>
+      <button className='원딜버튼'>원딜</button>
+      <button className='서폿버튼'>서폿</button>
+    </div>
+
+
+    <div className='flex'>
+
+
+
+      <div id='list' className='flex1'>
         {탑.map(el => {
-          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
-        })}
-      </div>
-      <h2>백정</h2>
-      <div id='list' className='flex'>
-        {정글.map(el => {
-          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
-        })}
-      </div>
-      <h2>황족</h2>
-      <div id='list' className='flex'>
-        {미드.map(el => {
-          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
-        })}
-      </div>
-      <h2>숟가락</h2>
-      <div id='list' className='flex'>
-        {원딜.map(el => {
-          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
-        })}
-      </div>
-      <h2>도구</h2>
-      <div id='list' className='flex'>
-        {서폿.map(el => {
-          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el.src}/></a>
+          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el}/></a>
         })}
       </div>
 
+
+
+
+      <div id='list' className='flex2'>
+        {정글.map(el => {
+          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el}/></a>
+        })}
+      </div>
+
+
+
+
+      <div id='list' className='flex3'>
+        {미드.map(el => {
+          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el}/></a>
+        })}
+      </div>
+
+
+
+
+      <div id='list' className='flex4'>
+        {원딜.map(el => {
+          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el}/></a>
+        })}
+      </div>
+
+
+
+
+      <div id='list' className='flex5'>
+        {서폿.map(el => {
+          return <a onClick={ () => handleClick(el)}><Thumbnail key={el.id} champion={el}/></a>
+        })}
+      </div>
+
+
+    </div>
+
+<div className='flex_explain'>
       <div>
         {/* TODO: 아래 하드코딩된 내용 대신에, 목록 선택에 따른 이미지를 표시하세요 */}
         <h2>{picture.alt}</h2>
         <img src={picture.src} id='current-image' alt='이미지가 없을 때 나오는 대체 텍스트' />
       </div>
-    </div>
+    
+      <div>
+        <h2>챔피언에 대한 설명</h2>
+        <article className='expChampion'>{picture.article}</article>
+      </div>
+
+      </div>
+
+
+  </div>
   );
 }
 

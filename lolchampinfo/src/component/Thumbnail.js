@@ -1,7 +1,11 @@
-function Thumbnail(champion) {
+function Thumbnail({champion}) {
     console.dir(champion)
     return <>{
-        <img src={champion.champion} className="thumbnail"></img>
+        <div className='imgSrc'>
+        <img src={champion.src} className="thumbnail"></img>
+        <article>{champion.alt}</article>
+        <div></div>
+        </div>
 }</>;
 }
 export default Thumbnail;
