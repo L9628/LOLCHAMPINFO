@@ -1,5 +1,5 @@
 function Thumbnail({champion}) {
-    console.dir(champion)
+    // console.dir(champion)
     return <>{
         <div className='imgSrc'>
         <img src={champion.src} className="thumbnail"></img>

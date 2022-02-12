@@ -3,6 +3,7 @@
 }
 
 body {
+  background-color: #2a1920;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +18,7 @@ body {
 }
 
 h2 {
+  color: white;
   font-size: 13px;
 }
 
@@ -25,8 +27,16 @@ code {
     monospace;
 }
 
+article {
+  color: white;
+}
+
 #current-image {
-  max-height: 540px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  max-height: 340px;
+  width: 190px;
 }
 
 .thumbnail {
@@ -41,31 +51,31 @@ code {
   display: flex;
   text-align: center;
   font-size: 0.7rem;
+  flex-direction: row;
 }
 
 .flex > .flex1 {
-  flex: 0 1 20%;
+  flex: 1 1 auto;
 }
 
 .flex > .flex2 {
-  flex: 0 1 20%;
+  flex: 1 1 auto;
 }
 
 .flex > .flex3 {
-  flex: 0 1 20%;
+  flex: 1 1 auto;
 }
 
 .flex > .flex4 {
-  flex: 0 1 20%;
+  flex: 1 1 auto;
 }
 
 .flex > .flex5 {
-  flex: 0 1 20%;
+  flex: 1 1 auto;
 }
 
 .flex_explain {
   display: flex;
-  text-align: ;
 }
 
 button {
@@ -79,10 +89,86 @@ button {
   margin: 0px;
 }
 
-.expChampion {
+.content_expChampion {
+  display: block;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-top: 10px;
   height: 282px;
-  width: 240px;
+  width: 250px;
   font-size: 0.8rem;
   font-style: oblique;
   text-align: center;
+  color: gray;
+}
+
+.content_story {
+  margin-top: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#champ_filterBox {
+  border-radius: 0.5em;
+  height: 50px;
+  background-color: #2a1920;
+  border: 1px solid black;
+}
+
+.전체버튼 {
+  font-style: inherit;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.탑버튼 {
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.정글버튼 {
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.미드버튼 {
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.원딜버튼 {
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.서폿버튼 {
+  margin-bottom: 0px;
+  width: 14%;
+}
+
+.champ_name {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.sidebar1_Button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 136px;
+}
+
+.sidebar2_Button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 45px;
+}
+
+.sidebar3_Button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 58px;
 }
