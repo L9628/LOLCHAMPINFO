@@ -36,7 +36,7 @@ article {
   margin: 0px auto;
   text-align: center;
   max-height: 340px;
-  width: 190px;
+  width: 185px;
 }
 
 .thumbnail {
@@ -94,8 +94,8 @@ button {
   margin: 0px auto;
   padding-left: 10px;
   padding-top: 10px;
-  height: 282px;
-  width: 250px;
+  height: 80px;
+  width: 550px;
   font-size: 0.8rem;
   font-style: oblique;
   text-align: center;
@@ -119,6 +119,7 @@ button {
 
 .전체버튼 {
   font-style: inherit;
+  margin-left: 2.5em;
   margin-top: 10px;
   margin-bottom: 0px;
   width: 14%;
@@ -152,23 +153,44 @@ button {
 .champ_name {
   margin-top: 5px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 19px;
 }
-
+.sidebar {
+  margin-top: 20px;
+}
 .sidebar1_Button {
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 136px;
+  width: 150px;
 }
 
 .sidebar2_Button {
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 45px;
+  width: 55px;
 }
 
 .sidebar3_Button {
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 58px;
+  width: 65px;
+}
+
+.제작자정보 {
+  text-align: left;
+  color: white;
+  font-size: 13px;
+}
+
+footer {
+  text-align: right;
+  color: white;
+  font-size: 13px;
+}
+a {
+  color: gray;
+  text-decoration: none;
+}
+.blog1 {
+  margin-right: 25px;
 }

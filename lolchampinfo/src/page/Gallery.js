@@ -138,9 +138,9 @@ function Gallery() {
 <div className=''>
 
 <div className='sidebar'>
-          <button className='sidebar1_Button'>챔피언에 대한 설명</button>
+          {/* <button className='sidebar1_Button'>챔피언에 대한 설명</button>
           <button className='sidebar2_Button'>스킬</button>
-          <button className='sidebar3_Button'>스토리</button>
+          <button className='sidebar3_Button'>스토리</button> */}
           <div>
         {/* TODO: 아래 하드코딩된 내용 대신에, 목록 선택에 따른 이미지를 표시하세요 */}
         <h2 className='champ_name'>{picture.selected_champ}</h2>
@@ -153,13 +153,11 @@ function Gallery() {
 
         <div className='sidebar_content'>
           <article className='content_expChampion'>{picture.article}</article>
-          <article className='content_story hide'>{탑[0].stroy}</article>
+          {/* <article className='content_story hide'>{탑[0].stroy}</article> */}
         </div>
       </div>
 
       </div>
-
-
   </div>
   );
 }
